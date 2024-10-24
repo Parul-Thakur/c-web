@@ -13,9 +13,6 @@ import RemotePrint from "./Pages/RemotePrint/RemotePrint";
 import Account from "./Pages/Account/Account";
 import TopUp from "./Pages/TopUp/TopUp";
 import Pricing from "./Pages/Pricing/PricingConfig";
-import ResetPin from "./Pages/ResetPin/ResetPin";
-import AccessCode from "./Pages/ResetPin/AccessCode";
-import FirstAccessKey from "./Pages/ResetPin/FirstAccessKey";
 import EditPriceScheme from "./Pages/Pricing/EditPriceScheme";
 import LLA from "./Pages/LLA/LLA";
 
@@ -41,8 +38,7 @@ export default function App() {
           <Route path="/pricing" element={<Pricing/>} />
           <Route path="/pricing/:id" element={<EditPriceScheme/>} />
           <Route path="/reset-pin" element={<LLA/>} />
-          <Route path="/access-code" element={<AccessCode/>} />
-          <Route path="/access-key" element={<FirstAccessKey/>} />
+        
           {/* Add more routes here if needed */}
         </Route>
       </Routes>
