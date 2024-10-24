@@ -1,0 +1,54 @@
+.navbarMini {
+  border-bottom: 2px solid var(--grey);
+}
+
+.miniLinks {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.miniLinks li {
+  position: relative;
+}
+
+.miniLinks a {
+  color: var(--text-grey);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1.4rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.miniLinks a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--darkest-color);
+  transition: width 0.3s ease;
+  
+}
+
+
+.miniLinks .active::before {
+  width: 100%;
+  
+}
+.miniLinks a:hover{
+background-color: var(--hover);
+}
+
+.miniLinks .active {
+  color: var(--darkest-color);
+  font-weight: bold;
+}
+
+.miniLinks .active::before {
+  width: 100%;
+}
